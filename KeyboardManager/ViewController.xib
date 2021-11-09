@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19162" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19144"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ViewController" customModule="KeyboardManager" customModuleProvider="target">
+            <connections>
+                <outlet property="textfieldAge" destination="K7K-r8-5j2" id="yLu-38-VZO"/>
+                <outlet property="textfieldEmail" destination="Zvj-jZ-qxq" id="Gqf-ea-eSb"/>
+                <outlet property="textfieldLastName" destination="C5j-v0-mjE" id="AS1-jV-isi"/>
+                <outlet property="textfieldName" destination="lni-RI-F3q" id="GEK-rC-d4W"/>
+                <outlet property="textfieldNationality" destination="2l1-QY-lLR" id="fDn-SU-v2S"/>
+                <outlet property="textfieldTelephone" destination="LDI-iV-0Zt" id="Aaz-yZ-FF1"/>
+                <outlet property="topConstraint" destination="TVf-N1-TCh" id="ixu-nv-feJ"/>
+                <outlet property="view" destination="iN0-l3-epB" id="cop-mH-O1M"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="lni-RI-F3q">
+                    <rect key="frame" x="20" y="104" width="374" height="40"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="84m-sp-gnq"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
+                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Last name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="C5j-v0-mjE">
+                    <rect key="frame" x="20" y="174" width="374" height="40"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="zzn-rr-6PO"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
+                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="E-mail" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Zvj-jZ-qxq">
+                    <rect key="frame" x="20" y="244" width="374" height="40"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="X1s-S4-pZU"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
+                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Telephone" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="LDI-iV-0Zt">
+                    <rect key="frame" x="20" y="314" width="374" height="40"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="wjc-Rf-G6m"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
+                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Nationality" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="2l1-QY-lLR">
+                    <rect key="frame" x="20" y="384" width="374" height="40"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="KLc-mc-9q1"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
+                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Age" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="K7K-r8-5j2">
+                    <rect key="frame" x="20" y="454" width="374" height="40"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="74z-W0-8Nq"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="K7K-r8-5j2" firstAttribute="top" secondItem="2l1-QY-lLR" secondAttribute="bottom" constant="30" id="5Bn-sc-YSz"/>
+                <constraint firstItem="2l1-QY-lLR" firstAttribute="leading" secondItem="LDI-iV-0Zt" secondAttribute="leading" id="73C-ml-ayR"/>
+                <constraint firstItem="Zvj-jZ-qxq" firstAttribute="trailing" secondItem="C5j-v0-mjE" secondAttribute="trailing" id="CM9-UZ-WMr"/>
+                <constraint firstItem="K7K-r8-5j2" firstAttribute="leading" secondItem="2l1-QY-lLR" secondAttribute="leading" id="CXF-gl-iax"/>
+                <constraint firstItem="lni-RI-F3q" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="20" id="FWi-cr-Z8x"/>
+                <constraint firstItem="LDI-iV-0Zt" firstAttribute="top" secondItem="Zvj-jZ-qxq" secondAttribute="bottom" constant="30" id="Hef-x8-dxn"/>
+                <constraint firstItem="LDI-iV-0Zt" firstAttribute="trailing" secondItem="Zvj-jZ-qxq" secondAttribute="trailing" id="LyT-d8-wX7"/>
+                <constraint firstItem="2l1-QY-lLR" firstAttribute="top" secondItem="LDI-iV-0Zt" secondAttribute="bottom" constant="30" id="MuC-qf-r1D"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="C5j-v0-mjE" secondAttribute="trailing" constant="20" id="Pmz-Of-iXl"/>
+                <constraint firstItem="lni-RI-F3q" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="60" id="TVf-N1-TCh"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="lni-RI-F3q" secondAttribute="trailing" constant="20" id="U81-Vn-tv6"/>
+                <constraint firstItem="K7K-r8-5j2" firstAttribute="trailing" secondItem="2l1-QY-lLR" secondAttribute="trailing" id="Zyu-UP-IGm"/>
+                <constraint firstItem="C5j-v0-mjE" firstAttribute="top" secondItem="lni-RI-F3q" secondAttribute="bottom" constant="30" id="aId-dc-aNo"/>
+                <constraint firstItem="2l1-QY-lLR" firstAttribute="top" secondItem="LDI-iV-0Zt" secondAttribute="bottom" constant="30" id="cDy-77-Kzc"/>
+                <constraint firstItem="C5j-v0-mjE" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="20" id="gH3-QN-CX3"/>
+                <constraint firstItem="2l1-QY-lLR" firstAttribute="trailing" secondItem="LDI-iV-0Zt" secondAttribute="trailing" id="kEw-fN-ZgI"/>
+                <constraint firstItem="Zvj-jZ-qxq" firstAttribute="leading" secondItem="C5j-v0-mjE" secondAttribute="leading" id="voK-MY-odr"/>
+                <constraint firstItem="LDI-iV-0Zt" firstAttribute="leading" secondItem="Zvj-jZ-qxq" secondAttribute="leading" id="vw9-N7-hJV"/>
+                <constraint firstItem="C5j-v0-mjE" firstAttribute="height" secondItem="lni-RI-F3q" secondAttribute="height" id="yJW-hD-rTi"/>
+                <constraint firstItem="Zvj-jZ-qxq" firstAttribute="top" secondItem="C5j-v0-mjE" secondAttribute="bottom" constant="30" id="yOA-jI-osY"/>
+            </constraints>
+            <point key="canvasLocation" x="139" y="110"/>
+        </view>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
